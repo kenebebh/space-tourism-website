@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./starter-code/*.html"],
+  content: ["./html/*.html"],
   theme: {
     screens: {
       sm: "480px",
@@ -8,8 +8,22 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
-    colors: {},
-    extend: {},
+    extend: {
+      screens: {
+        md: "600px",
+      },
+      fontFamily: {
+        barlow: ["Barlow", "sans-serif"],
+        barlowCondensed: ["Barlow Condensed", "sans-serif"],
+        bellefair: ["Bellefair", "serif"],
+      },
+      colors: {
+        "very-light-grey": "#D0D6F9",
+      },
+      borderRadius: {
+        "fully-rounded": "1000rem",
+      },
+    },
   },
   plugins: [],
 };
