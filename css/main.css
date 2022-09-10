@@ -625,6 +625,10 @@ video {
   width: 60%;
 }
 
+.w-full{
+  width: 100%;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -862,12 +866,34 @@ body{
   border-radius: 50%;
 }
 
+@media (min-width: 640px){
+  .sm\:h-screen{
+    height: 100vh;
+  }
+}
+
 @media (min-width: 600px){
+  .md\:right-0{
+    right: 0px;
+  }
+
   .md\:flex{
     display: flex;
   }
 
   .md\:hidden{
     display: none;
+  }
+
+  .md\:h-full{
+    height: 100%;
+  }
+
+  .md\:h-6{
+    height: 1.5rem;
+  }
+
+  .md\:h-0{
+    height: 0px;
   }
 }
