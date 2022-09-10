@@ -559,15 +559,15 @@ video {
   width: 100%;
 }
 
-@media (min-width: 480px){
-  .container{
-    max-width: 480px;
-  }
-}
-
 @media (min-width: 600px){
   .container{
     max-width: 600px;
+  }
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
   }
 }
 
@@ -583,6 +583,32 @@ video {
   }
 }
 
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.right-0{
+  right: 0px;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.block{
+  display: block;
+}
+
 .flex{
   display: flex;
 }
@@ -591,12 +617,29 @@ video {
   display: none;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
+.w-3\/5{
+  width: 60%;
+}
+
 .flex-col{
   flex-direction: column;
 }
 
+.justify-end{
+  justify-content: flex-end;
+}
+
 .justify-between{
   justify-content: space-between;
+}
+
+.bg-slate-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -626,9 +669,14 @@ video {
   padding-right: 0.75rem;
 }
 
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-14{
@@ -640,12 +688,40 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.pb-5{
-  padding-bottom: 1.25rem;
+.pt-8{
+  padding-top: 2rem;
+}
+
+.pr-8{
+  padding-right: 2rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
+}
+
+.pl-5{
+  padding-left: 1.25rem;
+}
+
+.pr-3{
+  padding-right: 0.75rem;
 }
 
 .pt-20{
   padding-top: 5rem;
+}
+
+.pb-3{
+  padding-bottom: 0.75rem;
+}
+
+.pt-3{
+  padding-top: 0.75rem;
+}
+
+.pb-5{
+  padding-bottom: 1.25rem;
 }
 
 .text-center{
@@ -679,8 +755,16 @@ video {
   line-height: 1.75rem;
 }
 
+.font-bold{
+  font-weight: 700;
+}
+
 .uppercase{
   text-transform: uppercase;
+}
+
+.leading-7{
+  line-height: 1.75rem;
 }
 
 .tracking-widest{
@@ -697,6 +781,18 @@ video {
   color: rgb(208 214 249 / var(--tw-text-opacity));
 }
 
+.backdrop-blur-lg{
+  --tw-backdrop-blur: blur(16px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.backdrop-blur-sm{
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
 html{
   height: 100%;
 }
@@ -708,12 +804,57 @@ body{
 
 .container{
   height: 100%;
+}
+
+.container-home {
   background-image: url(../assets/home/background-home-mobile.jpg);
 }
 
+.container-destination {
+  background-image: url(../assets/destination/background-destination-mobile.jpg);
+}
+
+.container-crew {
+  background-image: url(../assets/crew/background-crew-mobile.jpg);
+}
+
+.container-technology {
+  background-image: url(../assets/technology/background-technology-mobile.jpg);
+}
+
 @media (min-width: 600px) {
-  .container {
+  .container-home {
     background-image: url(../assets/home/background-home-tablet.jpg);
+  }
+
+  .container-destination {
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
+  }
+
+  .container-crew {
+    background-image: url(../assets/crew/background-crew-tablet.jpg);
+  }
+
+  .container-technology {
+    background-image: url(../assets/technology/background-technology-tablet.jpg);
+  }
+}
+
+@media (min-width: 976px) {
+  .container-home {
+    background-image: url(../assets/home/background-home-desktop.jpg);
+  }
+
+  .container-destination {
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
+  }
+
+  .container-crew {
+    background-image: url(../assets/crew/background-crew-desktop.jpg);
+  }
+
+  .container-technology {
+    background-image: url(../assets/technology/background-technology-desktop.jpg);
   }
 }
 
